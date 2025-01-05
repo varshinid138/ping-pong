@@ -26,3 +26,7 @@ This is a simple multiplayer Ping Pong game built using Flask, Socket.IO, and HT
    ```bash
    git clone https://github.com/your-username/multiplayer-ping-pong.git
    cd multiplayer-ping-pong
+
+### To run the Command
+To run the backend end command - python app.py
+To run the front end command - python -m http.server 8000
