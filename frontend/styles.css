@@ -1,0 +1,88 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center the game container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+/* Styling for the game container */
+#game-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Game canvas styling */
+canvas {
+    background-color: #fcfcfc;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+/* Styling for the score display */
+.scoreboard {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.scoreboard span {
+    text-shadow: 2px 2px 5px rgba(25, 12, 108, 0.7);
+}
+
+/* Key press prompt (optional) */
+#controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #080808;
+    text-align: center;
+}
+
+/* Visual effects for game elements */
+canvas {
+    position: relative;
+}
+
+/* Add hover effects and transitions for interactive elements */
+button, .game-element {
+    transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+button:hover, .game-element:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+    .scoreboard {
+        font-size: 18px;
+    }
+}
